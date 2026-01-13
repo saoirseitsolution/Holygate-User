@@ -68,22 +68,25 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .containers {
-    width: 95%;
-    padding: 0px 30px;
+  .container {
+    width: 100%;
+    padding: 10px 55px;
+        margin: auto;
   }
 }
 
 @media (max-width: 1023px) {
-  .containers {
+  .container {
     width: 100%;
-    padding: 0px 50px;
+    padding: 10px 20px;
+    margin: auto;
   }
 }
 
 @media (max-width: 768px) {
-  .containers {
+  .container {
     width: 100%;
-    padding: 0px 25px;
+    padding: 8px 20px;
+        margin: auto;
   }
 }
