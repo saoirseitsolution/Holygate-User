@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 :root {
   /* You can define theme variables here if needed */
@@ -26,7 +22,6 @@
 body {
   background-color: #FFFDF5; 
   color: var(--foreground);
-  font-family: 'Montserrat', sans-serif;
 }
 
 #root {

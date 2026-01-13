@@ -11,11 +11,11 @@ export function Header() {
 
   const navigationItems = [
     { label: "Home", href: "#" },
-    { label: "Dhanam", href: "#" },
-    { label: "Nearby Churches", href: "#" },
-    { label: "Q&A", href: "#" },
-    { label: "Miracle", href: "#" },
-    { label: "Saba", href: "#" },
+    { label: "Dhyanam", href: "/dhyanam" },
+    { label: "Nearby Churches", href: "/nearby-churches" },
+    { label: "Q&A", href: "/q&a" },
+    { label: "Miracle", href: "/miracles" },
+    { label: "Saba", href: "/saba" },
   ]
 
   const moreItems = [
