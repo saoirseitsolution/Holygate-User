@@ -24,7 +24,7 @@ export const ReviewSection = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 mb-20">
+    <div className="max-w-7xl mx-auto  mt-8">
       <div className="bg-white border border-gray-100 rounded-4xl p-10 shadow-sm">
         
         {/* Header Summary */}

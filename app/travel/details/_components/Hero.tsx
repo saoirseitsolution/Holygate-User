@@ -29,7 +29,7 @@ export const Hero = () => {
         </div>
         <p className='text-white'>(128 reviews)</p>
         </div>
-        <h1 className="text-white text-6xl  mb-4 tracking-tight">
+        <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl  mb-4 tracking-tight">
           Migrating to Linear 101
         </h1>
         <p className="text-white/90  flex items-center gap-2">
