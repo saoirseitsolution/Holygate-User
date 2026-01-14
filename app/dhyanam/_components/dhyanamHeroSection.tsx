@@ -16,7 +16,7 @@ export default function DhyanamHeroSection() {
             className="grayscale"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-transparent to-transparent" />
         
         <div className="relative z-10 p-8 px-24 mt-20 flex justify-end">
           <div className="relative w-96">

@@ -56,7 +56,7 @@ export const DhyanamListing = () => {
             <div className="w-5 h-5 mt-0.5 bg-red-300 rounded-full p-1 " ><div className="w-3 h-3 bg-red-600 rounded-full animate-pulse" /></div>
             <h2 className="text-2xl font-bold text-slate-900">Live Sections</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {LIVE_DATA.map((v,i) => <LiveCard key={i} video={v} />)}
           </div>
         </section>

@@ -108,8 +108,8 @@ export default function MiracleListing() {
         </div>
 
         {/* Controls Section */}
-        <div className="flex flex-col flex-row justify-between items-start items-center gap-4 mb-12">
-          <div className="w-full w-auto flex gap-2 flex-col flex-row">
+        <div className="mb-12">
+          <div className="w-full  flex gap-2 flex-row">
             {/* Wishlist Button */}
             <button
               className="px-6 py-2 border-2 border-gray-800 rounded-full text-gray-900 font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 whitespace-nowrap"

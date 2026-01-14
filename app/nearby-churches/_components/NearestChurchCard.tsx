@@ -11,7 +11,7 @@ export const NearestChurchCard = ({ church }: { church: Church }) => {
   return (
     <div className="flex flex-col group">
       {/* Thumbnail with Heart Overlay */}
-      <div className="relative aspect-[16/9] rounded-[24px] overflow-hidden mb-4 shadow-sm">
+      <div className="relative aspect-video rounded-3xl overflow-hidden mb-4 shadow-sm">
         <img 
           src={church.thumbnail} 
           alt={church.title} 

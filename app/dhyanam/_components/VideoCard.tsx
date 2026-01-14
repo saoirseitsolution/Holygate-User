@@ -14,7 +14,7 @@ export const VideoCard = ({ video }: { video: ArchiveVideo }) => {
   return (
     <div className="flex flex-col group cursor-pointer">
       {/* Thumbnail Container */}
-      <div className="relative aspect-video rounded-[24px] overflow-hidden bg-gray-100 mb-4">
+      <div className="relative aspect-video rounded-3xl overflow-hidden bg-gray-100 mb-4">
         <img 
           src={video.thumbnail} 
           alt={video.title} 
