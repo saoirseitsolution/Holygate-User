@@ -19,16 +19,17 @@ export function Header() {
   ]
 
   const moreItems = [
-    { label: "About", href: "#" },
-    { label: "Contact", href: "#" },
-    { label: "Blog", href: "#" },
+    { label: "Anti-Drug", href: "#" },
+    { label: "Prayer", href: "#" },
+    { label: "Song", href: "#" },
+    {label : "Travel", href: "/travel"}
   ]
 
   return (
     <header className="w-full bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
             <Image src={logo1} alt="logo" width={50} height={50} />
         </div>
 

@@ -24,7 +24,7 @@ export const LiveCard = ({ video,key }: { video: VideoData,key:number }) => (
     <div className="absolute inset-0 flex items-center justify-center">
       <Play fill="white" className="text-white w-10 h-10 opacity-80 group-hover:scale-110 transition-transform" />
     </div>
-    <div className="absolute bottom-0 border-t border-gray-50/15 left-0 right-0 px-4 py-1 flex items-center justify-between bg-gradient-to-t from-black/80 to-transparent">
+    <div className="absolute bottom-0 border-t border-gray-50/15 left-0 right-0 px-4 py-1 flex items-center justify-between bg-linear-to-t from-black/80 to-transparent">
       <div className="flex items-center gap-2">
         <img src={video.avatar} className="w-8 h-8 rounded-full border border-white/20" alt="" />
         <div className="leading-tight">

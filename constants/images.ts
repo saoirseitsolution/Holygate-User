@@ -6,5 +6,9 @@ import DhyanamHero from '@/public/DhyanamHero.png'
 import recent from '@/public/recent.png';
 import live from '@/public/live.png';
 import video from '@/public/video.png';
+import travelHero from '@/public/travelHero.png';
+import travel from '@/public/travel.png';
 
-export { logo1, Logowhite, HeroSectionImage, PageNotFoundImage, DhyanamHero,recent,live,video };
+export { logo1, Logowhite, HeroSectionImage, PageNotFoundImage, DhyanamHero,recent,live,video,
+    travelHero,travel
+ };
