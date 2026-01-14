@@ -17,7 +17,7 @@ export interface TourData {
 export const TravelCard = ({ tour }: { tour: TourData }) => {
     const route = useRouter();
   return (
-    <div onClick={()=>route.push('/travel/details')} className="flex flex-col bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm group">
+    <div onClick={()=>route.push('/travel/details')} className="flex flex-col bg-white rounded-3xl cursor-pointer overflow-hidden border border-gray-100 shadow-sm group">
       {/* Image Container */}
       <div className="relative aspect-4/3 overflow-hidden">
         <Image 

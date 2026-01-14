@@ -20,10 +20,10 @@ const TRAVEL_DATA: TourData[] = [
 export default function TravelSection() {
     const router = useRouter();
   return (
-    <section className="py-16 px-12 bg-[#F9FAFB]">
+    <section className="py-16 lg:px-12 px-5 bg-[#F9FAFB]">
       {/* Top Filter & Action Bar */}
       <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center flex-wrap gap-3">
           <button className="bg-white cursor-pointer text-gray-400 border border-gray-100 px-6 py-2.5 rounded-full text-[13px] font-bold">All</button>
           <button className="bg-[#2E2773] cursor-pointer text-white px-6 py-2.5 rounded-full text-[13px] font-bold shadow-lg shadow-indigo-100">Recommended</button>
           <button className="bg-white cursor-pointer text-gray-400 border border-gray-100 px-6 py-2.5 rounded-full text-[13px] font-bold">Pilgrimage</button>

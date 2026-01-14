@@ -2,11 +2,12 @@
 import IconMap from '@/components/common/icons/IconMap';
 import { Clock, Users, Calendar, MapPin, Phone, Mail, Check, Download } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { ReviewSection } from './ReviewSection';
 
 export default function TravelDetailPage() {
     const route = useRouter();      
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 bg-white">
+    <div className=" container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#FAFAFA]">
       <div className="flex flex-col lg:flex-row gap-8">
         
         {/* --- LEFT CONTENT AREA --- */}
@@ -126,6 +127,7 @@ export default function TravelDetailPage() {
         </aside>
 
       </div>
+        <ReviewSection/>
     </div>
   );
 }
