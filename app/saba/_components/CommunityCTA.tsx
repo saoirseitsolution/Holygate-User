@@ -2,7 +2,7 @@
 
 export default function CommunityCTASection() {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-16 px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-12">
       <div className="container mx-auto">
         <div className="bg-gradient-to-r from-indigo-500 via-indigo-600 to-indigo-900 rounded-2xl md:rounded-3xl p-8 md:p-12 lg:p-16">
           <div className="max-w-2xl">
