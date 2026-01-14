@@ -95,7 +95,7 @@ export default function MiracleListing() {
   }
 
   return (
-    <section className="w-full py-12 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="w-full py-12 bg-white">
       <div className="container mx-auto">
         <div className="md:flex md:justify-between">
 
