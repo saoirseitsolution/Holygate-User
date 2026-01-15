@@ -27,7 +27,7 @@ export default function MiraclesSection() {
   ];
 
   return (
-    <div className="min-h-screen py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+    <div className="py-8">
       <div className="container mx-auto">
         {/* Header */}
         <div className="flex items-start justify-between mb-8 sm:mb-10 lg:mb-12">

@@ -35,7 +35,7 @@ export default function NearbyChurches() {
   ];
 
   return (
-    <div className="min-h-screen py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+    <div className="py-8">
       <div className="container mx-auto">
         {/* Header */}
         <div className="flex items-start justify-between mb-8 sm:mb-10 lg:mb-12">
@@ -59,7 +59,7 @@ export default function NearbyChurches() {
         </div>
 
         {/* Churches Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-4 lg:gap-6">
           {churches.map((church, index) => (
             <div
               key={index}
