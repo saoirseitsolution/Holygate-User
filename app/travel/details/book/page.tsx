@@ -5,8 +5,10 @@ import { BookingSummary } from "./_components/BookingSummary";
 import { DetailsForm, ReviewBooking } from "./_components/DetailsForm";
 import { InstallmentPlan } from "./_components/InstallmentPlan";
 import { PaymentInformation } from "./_components/PaymentInformation";
+import { useRouter } from "next/navigation";
 
 export default function BookingApp() {
+  const route = useRouter();
   const [step, setStep] = useState<number>(1);
   const [showSummary, setShowSummary] = useState<boolean>(true);
   useEffect(() => {
@@ -18,9 +20,10 @@ export default function BookingApp() {
     }, [step]);
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 bg-[#F9FAFB]">
+    <div className=" mx-auto container px-4 sm:px-6 lg:px-8  ">
+      <div className="bg-[#F9FAFB]">
       <BookingStepper step={step} setStep={setStep} />
-      <div className={`grid grid-cols-12 gap-8 items-start mx-auto`}>
+      <div className={`grid grid-cols-12 gap-8 items-start px-2 md:px-8 lg:px-12 pb-12 mx-auto`}>
         <div className={`${showSummary ? "lg:col-span-8 col-span-12" : "col-span-12"} space-y-6`}>
           {step === 1 && <DetailsForm />}
           {step === 2 && <ReviewBooking />}
@@ -36,7 +39,10 @@ export default function BookingApp() {
                 if(step ==3){
                     setStep(4)
                 }else{
-                 setStep(s => s+1)}}} className="flex-2 py-3 font-semibold bg-[#2E2773] text-white rounded-xl shadow-lg shadow-[#3F37C9]/20">
+                 setStep(s => s+1)}
+                 if(step === 4){
+                  route.push('/travel/success')
+                 }}} className="flex-2 py-3 font-semibold bg-[#2E2773] text-white rounded-xl shadow-lg shadow-[#3F37C9]/20">
               {step === 3 ? "Proceed to Pay" : step === 4 ? "Complete Booking" : "Continue"}
             </button>
           </div>
@@ -44,6 +50,7 @@ export default function BookingApp() {
        {showSummary && <div className="col-span-4 hidden lg:block">
           <BookingSummary />
         </div>}
+      </div>
       </div>
     </div>
   );
