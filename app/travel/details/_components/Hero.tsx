@@ -1,3 +1,4 @@
+"use client";
 import { MapPin, Wallet, Calendar, Search, Star } from 'lucide-react';
 import { travelHero } from '@/constants/images';
 import Image from 'next/image';
@@ -5,11 +6,19 @@ import Dropdown from '@/components/common/dropdown';
 import IconMap from '@/components/common/icons/IconMap';
 import IconBudget from '@/components/common/icons/IconBudget';
 import { IconCalender } from '@/components/common/icons/IconCalender';
+import { IconBack } from '@/components/common/icons/IconBack';
+import { useRouter } from 'next/navigation';
 
 export const Hero = () => {
+  const route = useRouter();
   return (
     <div className="relative h-[600px] w-full flex flex-col justify-end px-16 overflow-hidden">
       {/* 1. Background Image with Dark Tint */}
+       <div>
+        <div onClick={()=> route.push('/travel')} className="absolute left-6 cursor-pointer z-10 flex top-28 items-start gap-3">
+           <IconBack/> <p className=' text-gray-100'>Back</p>
+        </div>
+      </div>
       <div 
         className="absolute inset-0  bg-cover bg-center"
         aria-hidden="true"
@@ -19,6 +28,7 @@ export const Hero = () => {
         <Image src={travelHero} alt="Travel Hero" fill className="absolute inset-0 bg-black/40" />
           <div className="absolute inset-0" style={{ backgroundColor: '#00000040' }} />
       </div>
+     
 
       {/* 2. Text Content */}
       <div className="relative z-10 mb-20">

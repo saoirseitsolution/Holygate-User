@@ -59,7 +59,7 @@ export const TravelCard = ({ tour }: { tour: TourData }) => {
             <span className="text-[#64748B] text-[10px] font-medium uppercase tracking-wider">From</span>
             <span className="text-[#2E2773] font-semibold text-[18px]">${tour.price}</span>
           </div>
-          <button className="bg-[#2E2773] text-white px-4 py-1 rounded-xl text-[12px] font-bold hover:bg-[#342da3] transition-all shadow-md shadow-indigo-100">
+          <button onClick={(e)=>{e.stopPropagation(); route.push('/travel/details/book')}} className="bg-[#2E2773] cursor-pointer text-white px-4 py-1 rounded-xl text-[12px] font-bold hover:bg-[#342da3] transition-all shadow-md shadow-indigo-100">
             Book Now
           </button>
         </div>
