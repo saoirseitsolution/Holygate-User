@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function MiracleHeroSection() {
   return (
-    <section className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat mt-16">
+    <section className="relative container w-full overflow-hidden bg-cover bg-center bg-no-repeat">
 
         {/* Background Image */}
       <Image
@@ -16,7 +16,7 @@ export default function MiracleHeroSection() {
       />
 
       {/* Content container */}
-      <div className="relative z-10 h-full flex flex-col justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16">
+      <div className="relative z-10 h-full flex flex-col justify-between  py-8 sm:py-12 md:py-16">
 
         {/* Main content - centered vertically */}
         <div className="flex items-end justify-start mb-8 md:mb-16 pt-22">
