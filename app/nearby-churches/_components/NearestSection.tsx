@@ -9,9 +9,10 @@ const NEAREST_CHURCHES_DATA = Array(9).fill({
 
 export default function NearestSection() {
   return (
-    <section className="py-24 px-12 bg-white">
+    <div className="w-full ">
+    <section className=" container bg-white">
       {/* Header Area */}
-      <div className="mb-10">
+      <div className="mb-10 mt-6">
         <h2 className="text-3xl font-bold text-[#1A1C21]">Nearest Churches</h2>
         <p className="text-[#64748B] text-sm mt-1">Location based nearest churches for you</p>
       </div>
@@ -44,11 +45,12 @@ export default function NearestSection() {
       </div>
 
       {/* 3x3 Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 mb-10">
         {NEAREST_CHURCHES_DATA.map((church, index) => (
           <NearestChurchCard key={index} church={{...church, id: index.toString()}} />
         ))}
       </div>
     </section>
+    </div>
   );
 }

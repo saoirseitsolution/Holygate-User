@@ -1,22 +1,23 @@
 "use client"
 
-import { DhyanamHero } from "@/constants/images"
+import { IconPlay } from "@/components/common/icons/IconPlay"
+import { DhyanamHero, prayersHero, songHero, wave } from "@/constants/images"
 import { Search } from "lucide-react"
 import Image from "next/image"
 
-export default function DhyanamHeroSection() {
+export default function Hero() {
   return (
     <div className="relative  h-[480px] w-full bg-[#050505] text-white">
-      <div className="absolute inset-0 opacity-50 grayscale">
+      <div className="absolute inset-0 opacity-50 ">
         <Image 
-          src={DhyanamHero} 
-          alt="Dhyanam Hero" 
+          src={songHero} 
+          alt="Hero" 
           layout="fill" 
           objectFit="cover" 
-          className="grayscale"
+          className=""
         />
       </div>
-      <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-transparent to-transparent" />
+      {/* <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-transparent to-transparent" /> */}
 
       <div className="relative z-10 p-4 lg:p-8 lg:px-24  flex justify-center lg:justify-end">
         <div className="relative w-full max-w-md lg:w-96">
@@ -29,11 +30,14 @@ export default function DhyanamHeroSection() {
         </div>
       </div>
       <div className="w-full flex flex-col items-center justify-end h-full">
-      <div className="relative container z-10 mt-8 lg:mt-16 ">
+      <div className="relative container z-10  ">
+        <div className="flex items-center">
+            <IconPlay/><Image className="h-24 w-auto" src={wave} alt='wave'/>
+        </div>
         <h1 className="sm:text-4xl text-3xl lg:text-5xl font-semibold leading-snug lg:leading-[1.1] mb-4 lg:mb-6">
           Discover place of faith,<br /> prayer, and divine guidance
         </h1>
-        <p className="text-white/60 text-sm lg:text-[15px] leading-relaxed max-w-full sm:max-w-xl">
+        <p className="text-white/60 text-sm mb-10 lg:text-[15px] leading-relaxed max-w-full sm:max-w-xl">
           We are a community shaped by prayer, scripture, and daily life. Across seasons and generations, we gather to celebrate the liturgy, support one another, and walk together in faith.
         </p>
       </div>

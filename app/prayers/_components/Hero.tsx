@@ -1,22 +1,22 @@
 "use client"
 
-import { DhyanamHero } from "@/constants/images"
+import { DhyanamHero, prayersHero } from "@/constants/images"
 import { Search } from "lucide-react"
 import Image from "next/image"
 
-export default function DhyanamHeroSection() {
+export default function Hero() {
   return (
     <div className="relative  h-[480px] w-full bg-[#050505] text-white">
-      <div className="absolute inset-0 opacity-50 grayscale">
+      <div className="absolute inset-0 opacity-50 ">
         <Image 
-          src={DhyanamHero} 
-          alt="Dhyanam Hero" 
+          src={prayersHero} 
+          alt="Hero" 
           layout="fill" 
           objectFit="cover" 
-          className="grayscale"
+          className=""
         />
       </div>
-      <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-transparent to-transparent" />
+      {/* <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-transparent to-transparent" /> */}
 
       <div className="relative z-10 p-4 lg:p-8 lg:px-24  flex justify-center lg:justify-end">
         <div className="relative w-full max-w-md lg:w-96">

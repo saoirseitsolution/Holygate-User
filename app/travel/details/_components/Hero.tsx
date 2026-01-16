@@ -12,10 +12,10 @@ import { useRouter } from 'next/navigation';
 export const Hero = () => {
   const route = useRouter();
   return (
-    <div className="relative h-[600px] w-full flex flex-col justify-end px-16 overflow-hidden">
+    <div className="relative h-[600px] w-full flex flex-col justify-end  overflow-hidden">
       {/* 1. Background Image with Dark Tint */}
        <div>
-        <div onClick={()=> route.push('/travel')} className="absolute left-6 cursor-pointer z-10 flex top-28 items-start gap-3">
+        <div onClick={()=> route.push('/travel')} className="absolute left-6 cursor-pointer z-10 flex top-12 items-start gap-3">
            <IconBack/> <p className=' text-gray-100'>Back</p>
         </div>
       </div>
@@ -31,6 +31,7 @@ export const Hero = () => {
      
 
       {/* 2. Text Content */}
+      <div className='container flex flex-col justify-end h-full '>
       <div className="relative z-10 mb-20">
         <div className='flex items-center gap-4 mb-3'>
         <div className=" bg-[#F0B100] backdrop-blur-md px-2 py-1 rounded-xl flex items-center gap-1 border border-white/10">
@@ -46,7 +47,7 @@ export const Hero = () => {
           <IconMap size={24} fill='#ffff'/> Vellankanni Church, Tamil Nadu
         </p>
       </div>
-
+      </div>
      
     </div>
   );

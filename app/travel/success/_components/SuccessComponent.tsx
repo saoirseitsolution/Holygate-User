@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { 
   Check, 
@@ -10,11 +11,15 @@ import {
   ExternalLink 
 } from 'lucide-react';
 import { IconContainerCheck } from '@/components/common/icons/IconContainerCheck';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 const SuccessPage = () => {
+  const params = useSearchParams();
+  const router = useRouter();
+  const backUrl = params.get('back') || '/travel';
   return (
-    <div className="min-h-screen bg-[#F9FAFB] mt-12 py-12 px-4 sm:px-6 lg:px-8 font-sans">
-      <div className="max-w-3xl mx-auto">
+    <div className="min-h-screen bg-[#F9FAFB]  py-12 px-4 sm:px-6 lg:px-8 font-sans">
+      <div className="max-w-4xl mx-auto">
         
         {/* --- Header Section --- */}
         <div className="text-center mb-10">
@@ -147,7 +152,7 @@ const SuccessPage = () => {
 
         {/* --- Final CTA --- */}
         <div className="text-center">
-          <button className="bg-[#2E2773] text-white px-10 py-2 rounded-lg font-semibold text-[15px] shadow-xl hover:bg-black transition-all">
+          <button onClick={()=> router.push(backUrl)} className="bg-[#2E2773] cursor-pointer text-white px-10 py-2 rounded-lg font-semibold text-[15px] shadow-xl hover:bg-black transition-all">
             Explore More Programs
           </button>
         </div>

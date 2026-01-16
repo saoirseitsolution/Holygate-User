@@ -14,8 +14,13 @@ import aboutbg from '@/public/aboutbg.png';
 import mission1 from '@/public/mission1.png';
 import mission2 from '@/public/mission2.png';
 import mission3 from '@/public/mission3.png';
+import anti_drug1 from '@/public/anti-drug1.png';
+import anti_drug2 from '@/public/anti-drug2.png';
+import prayersHero from '@/public/prayersHero.png';
+import songHero from '@/public/SongHero.png';
+import wave from '@/public/wave.png';
+
 
 
 export { logo1, Logowhite, HeroSectionImage, PageNotFoundImage, DhyanamHero,recent,live,video,
-    travelHero,travel,fourNotFound,about,aboutbg,mission1,mission2,mission3
- };
+    travelHero,travel,fourNotFound,about,aboutbg,mission1,mission2,mission3,anti_drug1,anti_drug2,prayersHero ,songHero,wave};

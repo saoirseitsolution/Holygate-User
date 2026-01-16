@@ -10,7 +10,7 @@ export const BookingStepper = ({ step, setStep }: { step: number; setStep: (step
   ];
 
   return (
-    <div className="flex items-center mt-20 pt-8 justify-center gap-2 mb-10">
+    <div className="flex items-center pt-8 justify-center gap-2 mb-10">
       {steps.map((s, i) => (
         <React.Fragment key={s.id}>
           <div className="flex items-center gap-3 " onClick={()=> setStep(i+1)}>

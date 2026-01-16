@@ -25,7 +25,7 @@ export const ReviewSection = () => {
 
   return (
     <div className="max-w-7xl mx-auto  mt-8">
-      <div className="bg-white border border-gray-100 rounded-4xl p-10 shadow-sm">
+      <div className="bg-white border border-gray-100 rounded-4xl p-10 mb-10 shadow-sm">
         
         {/* Header Summary */}
         <div className="flex justify-between items-center mb-6">
