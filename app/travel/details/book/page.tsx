@@ -21,10 +21,10 @@ export default function BookingApp() {
 
   return (
    
-    <div className="container  ">
-      <div className=" bg-[#F9FAFB] -my-3">
+    <div className="container">
+      <div className=" -my-3">
       <BookingStepper step={step} setStep={setStep} />
-      <div className={`grid grid-cols-12 gap-8 items-start px-2 md:px-4 lg:px-8 pb-12 mx-auto`}>
+      <div className={`grid grid-cols-12 gap-8 items-start pb-12 mx-auto`}>
         <div className={`${showSummary ? "lg:col-span-8 col-span-12" : "col-span-12"} space-y-6`}>
           {step === 1 && <DetailsForm />}
           {step === 2 && <ReviewBooking />}
