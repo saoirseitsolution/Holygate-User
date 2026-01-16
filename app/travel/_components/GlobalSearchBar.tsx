@@ -3,7 +3,7 @@ import { Search, MapPin, Wallet, Calendar, ChevronDown } from 'lucide-react';
 
 const GlobalSearchBar = () => {
   return (
-    <div className="mx-auto z-10 w-full px-4 mb-12 lg:mb-20 max-w-6xl">
+    <div className="mx-auto z-10 w-full mb-12 lg:mb-20">
       {/* Desktop & Tablet Container */}
       <div className="bg-[#F3F4F6] lg:bg-white/95 backdrop-blur-md rounded-[20px] sm:rounded-full p-2 flex flex-col sm:flex-row items-center justify-between shadow-xl lg:shadow-2xl border border-white/20">
         
