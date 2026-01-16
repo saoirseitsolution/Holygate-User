@@ -3,7 +3,7 @@ import { Wallet, Plus, ArrowUpRight, ArrowDownLeft, Trash2, CreditCard } from 'l
 
 const WalletProfile = () => {
   return (
-    <div className="flex-1 max-w-[1000px] animate-in fade-in duration-500">
+    <div className=" animate-in fade-in duration-500">
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-xl font-bold text-[#1A1C21]">My Wallet</h1>
@@ -109,7 +109,7 @@ const WalletProfile = () => {
               <button className="text-[10px] font-bold text-red-500 hover:text-red-600">Remove</button>
             </div>
 
-            <button className="w-full py-3 border border-gray-100 rounded-xl text-[10px] font-bold text-gray-400 flex items-center justify-center gap-2 hover:bg-gray-50 transition-all">
+            <button className="w-full py-3 border border-gray-100 rounded-xl text-[10px] font-bold text-gray-400 flex items-center justify-center gap-2 hover:bg-gray-100 transition-all">
               <Plus size={12} /> Add Payment Method
             </button>
           </div>

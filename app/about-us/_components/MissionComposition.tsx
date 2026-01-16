@@ -5,7 +5,7 @@ import Image from "next/image";
 const MissionComposition = () => (
   <div className="relative w-full col-span-3 h-[500px] flex items-end">
     {/* 1. Base Navy Quote Card */}
-    <div className="relative z-10 w-full bg-[#2E297A] rounded-[24px] p-8 sm:p-12 shadow-2xl overflow-hidden">
+    <div className="relative z-10 w-full bg-[#2E297A] rounded-xl p-8 sm:p-12 shadow-2xl overflow-hidden">
       {/* Decorative background circles */}
       <div className="absolute -bottom-14 -right-8 w-40 h-40 bg-white/5 rounded-full " />
       <div className="absolute bottom-12 right-12 w-20 h-20 bg-white/10 rounded-full" />
@@ -30,7 +30,7 @@ const MissionComposition = () => (
     </div>
 
     {/* 3. Small Left Image (Altar) */}
-    <div className="absolute top-36 -translate-y-1/4 left-14 w-[120px] h-[140px] z-20">
+    <div className="absolute top-36 -translate-y-1/4 left-1/6 w-[120px] h-[140px] z-20">
       <Image 
         src={mission2} 
         className="w-full h-full object-cover rounded-xl shadow-xl border-2 border-white/50" 
@@ -39,7 +39,7 @@ const MissionComposition = () => (
     </div>
 
     {/* 4. Small Right Image (Candles) */}
-    <div className="absolute top-36 -translate-y-1/4 right-14 w-[120px] h-[140px] z-20">
+    <div className="absolute top-36 -translate-y-1/4 right-1/6 w-[120px] h-[140px] z-20">
       <Image 
         src={mission3}
         className="w-full h-full object-cover rounded-xl shadow-xl border-2 border-white/50" 

@@ -1,11 +1,11 @@
 import IconMap from "@/components/common/icons/IconMap";
 import { ArrowRight, Calendar, Clock, Download, User } from "lucide-react";
 
-export const BookingCard = ({ title, id, status, paid, total, remaining }: any) => {
+export const BookingCard = ({ title, id, status, paid, total, remaining , setActiveTab }: any) => {
   const progress = (paid / total) * 100;
 
   return (
-    <div className="bg-white border border-gray-100 rounded-[24px] p-6 mb-6 shadow-sm">
+    <div  className="bg-white border border-gray-100 rounded-[24px] p-6 mb-6 shadow-sm">
       {/* Header Row */}
       <div className="flex justify-between items-start mb-6">
         <div>
@@ -44,7 +44,7 @@ export const BookingCard = ({ title, id, status, paid, total, remaining }: any) 
 
       {/* Action Footer */}
       <div className="flex flex-wrap gap-3">
-        <button className="flex items-center gap-2 bg-[#2E297A] text-white px-5 py-2.5 rounded-xl text-xs font-bold hover:bg-[#3F3D89] transition-all">
+        <button onClick={()=> setActiveTab('details')} className="flex cursor-pointer items-center gap-2 bg-[#2E297A] text-white px-5 py-2.5 rounded-xl text-xs font-bold hover:bg-[#3F3D89] transition-all">
           View Details <ArrowRight size={14} />
         </button>
         {status === 'Confirmed' ? (

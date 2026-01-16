@@ -23,7 +23,7 @@ const FeatureItem = ({ Icon, title, description, iconColor }: { Icon: React.FC<{
 
 const BeliefsSection = () => {
   return (
-    <section className="relative py-6 px-6 max-w-7xl mx-auto overflow-hidden">
+    <section className="relative py-3  overflow-hidden">
       {/* 1. Background Watermark Image */}
       <div className="absolute inset-0 z-0 -bottom-16 flex justify-center items-center opacity-10 pointer-events-none">
         <Image 

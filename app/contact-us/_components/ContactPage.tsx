@@ -7,7 +7,7 @@ import { IconDiscord } from '@/components/common/icons/IconDiscord';
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-[#FAFBFF] mt-16 py-12 container px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#FAFBFF] mt-10 py-12 container px-4 sm:px-6 lg:px-8">
       <div className="px-3 mb-12">
         <h1 className="text-4xl font-bold text-[#1A1C21] mb-2">Contact Us</h1>
         <p className="text-gray-500 font-medium">Any question or remarks? Just write us a message!</p>
