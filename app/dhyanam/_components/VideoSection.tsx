@@ -15,15 +15,17 @@ const ARCHIVE_VIDEOS = Array(6).fill({
 export default function VideoSection() {
     const [value,setValue] = useState('Most recent');
   return (
-    <section className="px-12 mb-14 bg-white ">
-      <div className="mb-5">
+    <section className="w-full py-14 bg-white ">
+      <div className="mb-5 container">
         <h2 className="text-3xl font-bold text-[#1A1C21]">Videos</h2>
         <p className="text-[#64748B] text-sm mt-2 font-medium">Find churches and programs happening now</p>
       </div>
 
       {/* Filter & Action Bar */}
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-6">
-        <div className="flex flex-wrap gap-2">
+      <div className="w-full">
+        <div className="container">
+      <div className="  flex flex-col lg:flex-row items-center justify-between gap-6 mb-6">
+        <div className="flex  flex-wrap gap-2">
           <button className="bg-[#2E2773] text-white px-5 py-1 rounded-full text-[13px] font-bold shadow-lg shadow-indigo-100">All</button>
           {['Demo', 'Demo', 'Demo', 'Demo'].map((cat, i) => (
             <button key={i} className="bg-white text-gray-400 border border-gray-200 px-5 py-1 rounded-full text-[13px] font-bold hover:bg-gray-50 transition-colors">
@@ -59,13 +61,15 @@ export default function VideoSection() {
           </div>
         </div>
       </div>
-
+     
       {/* Grid Implementation */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
         {ARCHIVE_VIDEOS.map((video, index) => (
           <VideoCard key={index} video={{...video, id: index.toString()}} />
         ))}
       </div>
+      </div>
+       </div>
     </section>
   );
 }

@@ -17,7 +17,8 @@ const TRAVEL_DATA: TourData[] = [
 
 export default function TravelSection() {
   return (
-    <section  className="py-16 px-12 bg-[#F9FAFB]">
+    <div className="w-full bg-[#F9FAFB] py-10">
+    <section  className="py-16 container ">
       {/* Top Filter & Action Bar */}
       <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12">
         
@@ -34,11 +35,12 @@ export default function TravelSection() {
       </div>
 
       {/* Grid: 4 Columns per row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         {Array(3).fill(null).map((_, i) => (
           <TravelCard key={i} tour={{...TRAVEL_DATA[0], id: i.toString()}} />
         ))}
       </div>
     </section>
+    </div>
   );
 }

@@ -7,7 +7,8 @@ import { ReviewSection } from './ReviewSection';
 export default function TravelDetailPage() {
     const route = useRouter();      
   return (
-    <div className=" container mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#FAFAFA]">
+    <div className='w-full bg-[#FAFAFA] pt-10'>
+    <div className=" container mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="flex flex-col lg:flex-row gap-8">
         
         {/* --- LEFT CONTENT AREA --- */}
@@ -128,6 +129,7 @@ export default function TravelDetailPage() {
 
       </div>
         <ReviewSection/>
+    </div>
     </div>
   );
 }

@@ -47,13 +47,13 @@ export default function RecentSection() {
   }
 ];
   return (
-    <div className="px-12 bg-white ">
-      <div className="mb-10 pl-2">
+    <div className="px-12 w-full mt-4 pt-8 bg-white ">
+      <div className="mb-10 container pl-2">
         <h2 className="text-3xl font-semibold text-[#1e293b] tracking-tight">Recent Videos</h2>
         <p className="text-slate-500 text-sm mt-3 font-medium">Find churches and programs happening now</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid container grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {RECENT_VIDEOS.map((video) => (
           <RecentCard key={video.id} video={video} />
         ))}

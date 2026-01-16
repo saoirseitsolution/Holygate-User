@@ -8,7 +8,8 @@ import { IconCalender } from '@/components/common/icons/IconCalender';
 
 export const TravelHero = () => {
   return (
-    <div className="relative h-[600px] w-full flex flex-col justify-end px-16 overflow-hidden">
+    <div className='w-full relative'>
+    <div className="container h-[600px] w-full flex flex-col justify-end  overflow-hidden">
       {/* 1. Background Image with Dark Tint */}
       <div 
         className="absolute inset-0  bg-cover bg-center"
@@ -31,6 +32,7 @@ export const TravelHero = () => {
       </div>
 
      
+    </div>
     </div>
   );
 };

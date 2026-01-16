@@ -15,8 +15,8 @@ export default function UserDashboard() {
   const [activeTab, setActiveTab] = React.useState('profile');
 
   return (
-    <div className="min-h-screen bg-[#FAFBFC] p-4 md:p-10 mt-10">
-      <div className="flex gap-10">
+    <div className="min-h-screen bg-[#FAFBFC] p-4 md:p-8">
+      <div className="flex gap-7">
         
         {/* SIDEBAR */}
         <aside className="lg:w-80 shrink-0">

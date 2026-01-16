@@ -49,9 +49,10 @@ export const ARCHIVE_DATA: VideoData[] = Array(6).fill({
 
 export const DhyanamListing = () => {
   return (
- <main className=" relative z-20 space-y-10 mt-4 ">
+    <div>
+ <main className="max-w-full bg-[#EBF7FF] relative z-20  mt-4 ">
         {/* 2. LIVE SECTIONS (Light Blue Container) */}
-        <section className="bg-[#EBF7FF] pt-8  p-16 shadow-sm">
+        <section className=" container pt-8  p-16 ">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-5 h-5 mt-0.5 bg-red-300 rounded-full p-1 " ><div className="w-3 h-3 bg-red-600 rounded-full animate-pulse" /></div>
             <h2 className="text-2xl font-bold text-slate-900">Live Sections</h2>
@@ -67,5 +68,6 @@ export const DhyanamListing = () => {
         {/* 4. MAIN VIDEOS (Archive Style) */}
         <VideoSection/>
       </main>
+      </div>
   )
 }

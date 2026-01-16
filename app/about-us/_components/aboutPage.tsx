@@ -28,9 +28,10 @@ const TextBlock = ({ title, content } : { title: string, content: string }) => (
 
 const AboutUsPage = () => {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen w-full bg-white font-sans pb-12">
       {/* --- Hero Section --- */}
-      <section className="relative h-[570px] flex items-end p-6 sm:p-16 overflow-hidden">
+      <div className ="relative">
+      <section className=" h-[570px] flex items-end container overflow-hidden">
         <Image 
           src={about} 
           className="absolute inset-0 w-full h-full object-cover"
@@ -46,7 +47,7 @@ const AboutUsPage = () => {
           </p>
         </div>
       </section>
-
+       </div>
       {/* --- Beliefs Section --- */}
       <section className=" py-16 container mx-auto px-4 sm:px-6 lg:px-10 " >
         <BeliefsSection/>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Play, Trash2, Music } from 'lucide-react';
+import Image from 'next/image';
+import { HeroSectionImage } from '@/constants/images';
 
 const SongsWishlist = () => {
   const [activeTab, setActiveTab] = useState('Songs');
@@ -17,8 +19,8 @@ const SongsWishlist = () => {
             
             {/* Square Media Container */}
             <div className="relative aspect-square overflow-hidden rounded-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" 
+              <Image 
+                src={HeroSectionImage}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                 alt="Song Cover" 
               />

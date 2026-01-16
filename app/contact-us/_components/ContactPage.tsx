@@ -7,7 +7,8 @@ import { IconDiscord } from '@/components/common/icons/IconDiscord';
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-[#FAFBFF] mt-10 py-12 container px-4 sm:px-6 lg:px-8">
+    <div className='w-full bg-[#FAFBFF]'>
+    <div className="min-h-screen  container  py-12 ">
       <div className="px-3 mb-12">
         <h1 className="text-4xl font-bold text-[#1A1C21] mb-2">Contact Us</h1>
         <p className="text-gray-500 font-medium">Any question or remarks? Just write us a message!</p>
@@ -16,7 +17,7 @@ const ContactPage = () => {
       <div className=" mx-auto bg-white rounded-3xl shadow-xl shadow-indigo-50/50 p-2 flex flex-col md:flex-row min-h-[600px]">
         
         {/* --- Sidebar: Contact Information --- */}
-        <div className="md:w-[40%] bg-[#2E297A] rounded-lg p-10 relative overflow-hidden flex flex-col justify-between text-white">
+        <div className="md:w-[40%] bg-[#2E297A]  rounded-lg p-10 relative overflow-hidden flex flex-col justify-between text-white">
           <div>
             <h2 className="text-2xl font-bold mb-2">Contact Information</h2>
             <p className="text-gray-300 text-sm font-medium">Say something to start a live chat!</p>
@@ -30,7 +31,7 @@ const ContactPage = () => {
                 <Mail size={20} />
                 <span className="text-sm font-medium">demo@gmail.com</span>
               </div>
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6 mb-2 md:mb-0">
                 <MapPin size={20} className='shrink-0' />
                 <span className="text-sm font-medium leading-relaxed max-w-[220px]">
                   132 Dartmouth Street Boston, Massachusetts 02156 United States
@@ -61,6 +62,7 @@ const ContactPage = () => {
         <ContactForm/>
 
       </div>
+    </div>
     </div>
   );
 };
