@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { BookingCard } from "./BookingCard";
 
-export const MyBookings = () => {
+export const MyBookings = ({setActiveTab} : { setActiveTab: any}) => {
     const [filter, setFilter] = useState('all');
   return (
-    <div className="flex-1 max-w-4xl mx-auto">
+    <div className="">
       <div className="flex justify-between items-center mb-8">
         <div>
           <h2 className="text-2xl font-bold text-[#1A1C21]">My Bookings</h2>
@@ -20,7 +20,7 @@ export const MyBookings = () => {
         </div>
       </div>
 
-      <BookingCard
+      <BookingCard setActiveTab={setActiveTab}
         title="Faith & Spiritual Retreat" 
         id="BKGD01" 
         status="Confirmed" 
@@ -28,7 +28,7 @@ export const MyBookings = () => {
         total={24000} 
         remaining={0}
       />
-      <BookingCard 
+      <BookingCard setActiveTab={setActiveTab}
         title="Holy Land Pilgrimage" 
         id="BKGD02" 
         status="Pending" 

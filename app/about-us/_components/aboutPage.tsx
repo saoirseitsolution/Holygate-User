@@ -48,7 +48,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* --- Beliefs Section --- */}
-      <section className="max-w-7xl  mx-auto py-16 px-6 sm:px-12 " >
+      <section className=" py-16 container mx-auto px-4 sm:px-6 lg:px-10 " >
         <BeliefsSection/>
        
          {/* Video Placeholder */}

@@ -9,13 +9,14 @@ import { FcLike } from "react-icons/fc";
 import { IconLike } from "@/components/common/icons/IconLike";
 import WishlistSection from "./WishlistSection";
 import WalletSection from "./WalletSection";
+import BookingDetails from "./BookingDetail";
 
 export default function UserDashboard() {
   const [activeTab, setActiveTab] = React.useState('profile');
 
   return (
-    <div className="min-h-screen bg-[#FAFBFF] p-4 md:p-10 mt-16">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
+    <div className="min-h-screen bg-[#FAFBFC] p-4 md:p-10 mt-10">
+      <div className="flex gap-10">
         
         {/* SIDEBAR */}
         <aside className="lg:w-80 shrink-0">
@@ -46,9 +47,9 @@ export default function UserDashboard() {
         </aside>
 
         {/* CONTENT AREA */}
-        <main className="flex-1">
+        <main className=" flex-12">
           {activeTab === 'profile' && <ProfileDetailsSection />}
-          {activeTab === 'bookings' && <MyBookings />}
+          {activeTab === 'bookings' ? <MyBookings setActiveTab={setActiveTab}  /> : activeTab === 'details' && <BookingDetails onBack={() => setActiveTab('bookings')} />}
            {activeTab === 'wishlist' && <WishlistSection />}
            {activeTab === 'wallet' && <WalletSection />}
           {activeTab === 'security' && <ChangePassword />}
